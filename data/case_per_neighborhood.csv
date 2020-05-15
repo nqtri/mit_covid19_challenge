@@ -1,0 +1,43 @@
+borough,uhf34_neigh,uhf42_neigh,population,positive_rate,test_per_capita,obesity_percent,excercise_percent,copd_rate,smoking_percent,drinking_percent,asthma_percent,cluster
+Queens,Bayside Little Neck-Fresh Meadows,Bayside - Little Neck,87423,35.44,0.04,53.4,73.4,14.4,11.2,11.7,2.2,0
+Queens,Bayside Little Neck-Fresh Meadows,Fresh Meadows,95537,39.06,0.055,53.4,73.4,14.5,11.2,11.7,2.2,0
+Brooklyn,Bedford Stuyvesant - Crown Heights,Bedford Stuyvesant - Crown Heights,316269,39.09,0.044,67.2,71.4,27.7,18.9,16.6,7.6,1
+Brooklyn,Bensonhurst - Bay Ridge,Bensonhurst - Bay Ridge,201541,37.38,0.04,50.3,69.5,38.3,11.7,15.4,2.2,1
+Brooklyn,Borough Park,Borough Park,322563,38.58,0.065,56.3,65.2,16.9,9.8,9.5,2.3,0
+Brooklyn,Canarsie - Flatlands,Canarsie-Flatlands,191734,43.48,0.06,61.3,69.0,15.1,10.6,7.0,4.4,0
+Manhattan,Central Harlem - Morningside Heights,Central Harlem - Morningside Heights,162238,35.05,0.05,52.4,73.2,29.6,17.2,27.1,1.8,0
+Manhattan,Chelsea-Village,Chelsea-Clinton,143506,29.83,0.045,36.7,82.8,15.0,11.2,33.9,3.3,0
+Manhattan,Chelsea-Village,Greenwich Village - Soho,83664,27.32,0.029,36.7,82.8,15.8,11.2,33.9,3.3,0
+Brooklyn,Coney Island - Sheepshead Bay,Coney Island-Sheepshead Bay,285275,39.62,0.052,60.6,67.6,29.1,15.6,11.8,2.9,1
+Brooklyn,Downtown - Heights - Slope,Downtown-Heights -Slope,227057,30.64,0.039,44.2,82.6,14.2,11.8,26.6,4.2,0
+Brooklyn,East Flatbush - Flatbush,East Flatbush - Flatbush,309120,42.6,0.049,63.6,77.5,19.9,10.4,15.2,4.3,0
+Manhattan,East Harlem,East Harlem,113291,40.11,0.055,62.0,80.8,40.3,18.2,19.1,4.225714285714286,1
+Brooklyn,East New York,East New York,191151,42.49,0.049,66.7,73.1,46.0,17.1,13.9,3.7,1
+Queens,Flushing - Clearview,Flushing - Clearview,260468,40.76,0.04,48.7,75.9,14.5,18.4,12.3,5.3,0
+Bronx,Fordham - Bronx Pk,Fordham - Bronx Pk,250249,43.39,0.066,65.1,70.9,45.5,11.0,17.7,8.2,1
+Brooklyn,Greenpoint,Greenpoint,126614,35.04,0.051,50.7,74.0,13.5,11.5,22.6,4.225714285714286,0
+Queens,Jamaica,Jamaica,292571,44.1,0.066,67.5,71.4,22.1,11.4,14.1,5.6,1
+Bronx,Kingsbridge - Riverdale,Kingsbridge - Riverdale,94095,36.56,0.067,54.7,76.9,33.8,14.0,18.1,3.4,1
+Queens,Long Island City - Astoria,Long Island City - Astoria,203963,34.89,0.044,60.0,78.9,22.1,13.7,20.9,4.225714285714286,0
+Bronx,Northeast Bronx,Northeast Bronx,190315,41.99,0.087,69.4,63.0,52.1,10.5,10.9,5.3,1
+Staten Island,Northern SI,Port Richmond,70403,38.92,0.076,64.6,71.1,50.5,19.2,20.3,2.0,1
+Staten Island,Northern SI,Stapleton - St. George,124270,37.32,0.076,64.6,71.1,31.2,19.2,20.3,2.0,1
+Bronx,Pelham - Throgs Neck,Pelham - Throgs Neck,297059,39.72,0.076,67.8,73.8,53.5,16.0,11.4,7.7,1
+Queens,Ridgewood - Forest Hills,Ridgewood - Forest Hills,246245,39.59,0.052,59.5,72.6,18.3,11.1,15.1,4.7,0
+Queens,Rockaways,Rockaways,115428,45.43,0.069,76.5,74.5,54.0,17.5,23.3,4.225714285714286,1
+Bronx,South Bronx,Crotona-Tremont,206630,41.79,0.064,75.1,68.2,25.1,14.2,14.5,7.4,1
+Bronx,South Bronx,High Bridge - Morrisania,210845,40.99,0.068,75.1,68.2,33.1,14.2,14.5,7.4,1
+Bronx,South Bronx,Hunts Point - Mott Haven,137197,41.52,0.068,75.1,68.2,22.3,14.2,14.5,7.4,1
+Queens,Southeast Queens,Southeast Queens,195005,46.11,0.067,58.4,84.9,17.4,6.6,9.7,4.225714285714286,0
+Staten Island,Southern SI,South Beach - Tottenville,188810,33.08,0.073,59.5,72.0,27.2,26.3,14.8,1.3,1
+Staten Island,Southern SI,Willowbrook,86010,36.33,0.08,59.5,72.0,41.3,26.3,14.8,1.3,1
+Queens,Southwest Queens,Southwest Queens,265900,43.86,0.061,60.5,70.5,17.9,13.1,18.9,3.0,0
+Brooklyn,Sunset Park,Sunset Park,127352,42.81,0.034,48.9,64.0,17.0,15.7,15.5,2.8,0
+Manhattan,Union Square-Lower Manhattan,Lower Manhattan,53215,25.78,0.031,37.0,85.1,16.7,12.8,32.7,5.0,0
+Manhattan,Union Square-Lower Manhattan,Union Square - Lower East Side,199170,32.34,0.032,37.0,85.1,8.6,12.8,32.7,5.0,0
+Manhattan,Upper East Side-Gramercy,Gramercy Park-Murray Hill,133688,23.92,0.041,37.4,89.0,10.6,7.9,22.2,4.0,0
+Manhattan,Upper East Side-Gramercy,Upper East Side,219000,25.63,0.043,37.4,89.0,7.0,7.9,22.2,4.0,0
+Manhattan,Upper West Side,Upper West Side,224274,27.86,0.037,42.4,91.4,8.5,12.8,23.3,1.0,0
+Manhattan,Washington Heights,Washington Heights-Inwood,250158,39.51,0.054,60.9,75.2,11.6,12.0,19.2,7.7,0
+Queens,West Queens,West Queens,482454,48.44,0.063,53.5,71.4,14.8,10.9,14.4,2.6,0
+Brooklyn,Williamsburg - Bushwick,Williamsburg - Bushwick,214590,39.15,0.04,59.4,75.6,25.7,18.6,23.8,2.0,0
