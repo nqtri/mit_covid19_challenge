@@ -36,7 +36,7 @@ Reference: https://www.cdc.gov/coronavirus/2019-ncov/need-extra-precautions/peop
 #### NYC Clusters based on Health Condition Statistics
 ![NYC Clusters](https://github.com/nqtri/mit_covid19_challenge/blob/master/img/cluster.png)
 
-![NYC Map](https://github.com/nqtri/mit_covid19_challenge/blob/master/img/nyc_map.png)
+![NYC Cluster Map](https://github.com/nqtri/mit_covid19_challenge/blob/master/img/nyc_clustermap.png)
 
 All of Bronx and Staten Island neighborhoods are in Cluster 0. Most neighborhoods in Manhattan are in Cluster 1. Queens dominates Cluster 2.
 
