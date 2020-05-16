@@ -64,6 +64,6 @@ based on underlying health conditions
 * Identify health factors that drive COVID-19 cases in certain neighborhoods
 
 * Possible Expansion of Dataset:
-  * https://www.cdc.gov/500Cities/
-  * https://www.huduser.gov/portal/datasets/usps_crosswalk.html
+  * 500 Cities: Local Data for Better Health: https://www.cdc.gov/500Cities/
+  * HUD USPS Zip Code Crosswalk Files: https://www.huduser.gov/portal/datasets/usps_crosswalk.html
  
