@@ -1,0 +1,152 @@
+---
+title: "Tukey HSD Tests for Cases per Neighborhood"
+output:
+  html_document:
+    df_print: paged
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+This notebook is used to conduct if there is significant difference between COVID-19 cases and rate between neighborhood clusters as detected earlier in Python. 
+
+```{r}
+# Read in the data
+data = read.csv("data/case_per_neighborhood.csv", head = TRUE, sep = ",")
+
+data$cluster = factor(data$cluster)
+
+# Show the first few rows of data
+head(data, 3)
+```
+
+Boxplot of *case_per_capita* and *cluster*, with *case_per_capita* on the vertical axis:
+
+```{r}
+boxplot(case_per_capita~cluster,data=data,
+        xlab="cluster", ylab="case_per_capita")
+```
+
+There seems to be noticeable difference in means of *case_per_capita* across the clusters. Let's see about *positive_rate*:
+
+```{r}
+boxplot(positive_rate~cluster,data=data,
+        xlab="cluster", ylab="positive_rate")
+```
+
+First, one-way ANOVA tests will be conducted on *case_per_capita* to confirm if the means across clusters are statistically significant. The null hypothesis is that all means are equal.
+
+```{r}
+case_per_capita_aov = aov(case_per_capita~cluster,data=data)
+
+summary(case_per_capita_aov)
+```
+
+At $\alpha$-level of 0.01,F-test p-value here is much smaller than that. Therefore, we reject the null hyphothesis of equal *case_per_capita* means between *cluster*. At least a pair of clusters has statistically significantly different *case_per_capita* means.
+
+```{r}
+TukeyHSD(case_per_capita_aov, conf.level = 0.99)
+```
+
+As Tukey HSD test confirms, there is statistically signficant difference between Cluster 1 and Cluster 0 and also between Cluster 1 and Cluster 2 while the test do not reject the null hypothesis for difference between Cluster 2 and Cluster 0. Cluster 1 has the lowest *case_per_capita* mean.
+
+Now, even if Cluster 2 and Cluster 0 has probably equal means in *case_per_capita*. They might be different in health issues that led to the division into 2 clusters.
+
+Boxplot of *obesity_percent* and *cluster*, with *obesity_percent* on the vertical axis:
+
+```{r}
+boxplot(obesity_percent~cluster,data=data,
+        xlab="cluster", ylab="obesity_percent")
+```
+
+```{r}
+obesity_aov = aov(obesity_percent~cluster,data=data)
+
+summary(obesity_aov)
+```
+
+ANOVA test does confirm the difference in *obesity_percent* means across clusters.
+
+
+```{r}
+TukeyHSD(obesity_aov, conf.level = 0.99)
+```
+
+All clusters have statiscally different  *obesity_aov* with Cluster 1 still has the lowest while Cluster 2 has the highest mean.
+
+Boxplot of *copd_rate* and *cluster*, with *copd_rate* on the vertical axis:
+
+```{r}
+boxplot(copd_rate~cluster,data=data,
+        xlab="cluster", ylab="copd_rate")
+```
+
+```{r}
+copd_aov = aov(copd_rate~cluster,data=data)
+
+summary(copd_aov)
+```
+
+ANOVA test confirms the difference in *copd_rate* means across clusters.
+
+```{r}
+TukeyHSD(copd_aov, conf.level = 0.99)
+```
+
+While again, Cluster 1 demonstrates a significant lower *copd_rate* mean between other clusters, Cluster 0 and Cluster 2 does not have any statistically difference in this health aspect.
+
+Boxplot of *asthma_percent* and *cluster*, with *asthma_percent* on the vertical axis:
+
+```{r}
+boxplot(asthma_percent~cluster,data=data,
+        xlab="cluster", ylab="asthma_percent")
+```
+
+```{r}
+asthma_aov = aov(asthma_percent~cluster,data=data)
+
+summary(asthma_aov)
+```
+
+ANOVA test confirms the difference in *asthma_percent* means across clusters.
+
+```{r}
+TukeyHSD(asthma_aov, conf.level = 0.99)
+```
+
+Interestingly, only Cluster 2 exhibits a statiscally higher *asthma_percent* mean than other clusters. Cluster 1 and Cluster 0 does not have a significant difference between their *asthma_percent*.
+
+Boxplot of *heart_attack_percent* and *cluster*, with *heart_attack_percent* on the vertical axis:
+
+```{r}
+boxplot(heart_attack_percent~cluster,data=data,
+        xlab="cluster", ylab="heart_attack_percent")
+```
+
+```{r}
+heart_aov = aov(heart_attack_percent~cluster,data=data)
+
+summary(heart_aov)
+```
+
+ANOVA test confirms the difference in *heart_attack_percent* means across clusters.
+
+```{r}
+TukeyHSD(heart_aov, conf.level = 0.99)
+```
+
+We see something similar again in  *heart_attack_percent*, Cluster 1 again has signficantly lower  *heart_attack_percent* mean than the other 2 while between Cluster 0 and Cluster 2 they do not have a statistically difference.
+
+In conclusion, the lower *case_per_capita* in Cluster 1 could be driven by the fact that it has lower *obesity_percent*, *copd_rate*, and *heart_attack_percent* than other clusters.
+
+Though Cluster 0 and Cluster 2 do not have a statistically difference in *case_per_capita* means, they are different because of their difference in *obesity_percent* and *asthma_percent* .
+
+
+
+
+
+
+
+
